@@ -7,3 +7,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+:root {
+    --muted: hsl(240, 4.8%, 95.9%);
+    --muted-text: rgb(114,116,123);
+    --bg-one: hsl(240, 4.8%, 98.9%);
+}
