@@ -15,14 +15,13 @@ const NewsCard: React.FC<newscardprops> = ({
 }) => {
   return (
     <>
-      <div className="flex mx-auto min-w-[300px] border-3 border-[var(--muted)] rounded-lg overflow-hidden">
+      <div className="flex max-w-[500px] border-3 border-[var(--muted)] rounded-lg">
         <div className="w-full">
           <img src={image.src} alt="" className="w-full h-[300px]" />
-
           <div className="flex flex-col p-6 bg-[var(--bg-one)] w-full">
             <div className="flex items-center space-x-2 text-[var(--muted-text)] mt-2">
-              <CiClock2 className="flex mt-1" />
-              <h1 className="text-sm">{duration} ago</h1>
+              <CiClock2 className="mt-1" />
+              <h1 className="mt-1 text-sm">{duration} ago</h1>
             </div>
             <h1 className="font-bold text-2xl my-4 break-words whitespace-normal overflow-hidden">
               {title}
