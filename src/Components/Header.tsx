@@ -21,8 +21,8 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className="shadow-xl z-[10001] fixed w-full bg-white bg-opacity-45 backdrop-blur-md">
-        <div className="flex justify-around">
+      <header className=" z-[10001] relative">
+        <nav className="flex justify-around fixed w-full shadow-xl bg-white bg-opacity-45 backdrop-blur-md">
           <a href="/" className="flex items-center">
             <div className="flex">
               <img
@@ -43,16 +43,16 @@ const Header: React.FC = () => {
                 menuOpen ? "flex" : "hidden"
               } xl:flex flex-col md:flex-row text-xl mt-8 gap-y-2 md:space-x-12`}
             >
-              <a href="" className="hover:border-b-[2px]">
+              <a href="/" className="hover:border-b-[2px]">
                 Home
               </a>
-              <a href="" className="hover:border-b-[2px]">
+              <a href="/news" className="hover:border-b-[2px]">
                 News
               </a>
               <a href="" className="hover:border-b-[2px]">
                 Contact Us
               </a>
-              <div className="flex flex-col md:flex-row xl:space-x-6 space-y-2 xl:items-center xl:mt-[-10px] text-lg font-semibold">
+              <div className="flex flex-col md:flex-row xl:space-x-6 space-y-2 xl:items-center xl:mt-[-10px] text-lg font-semibold xl:justify-end xl:ml-auto xl:mr-10">
                 <button
                   className="p-2 border-1 border-black/20 rounded-lg cursor-pointer hover:bg-black/10 transition-all ease-in-out duration-500"
                   onClick={signuphandler}
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
               </div>
             </nav>
           </div>
-        </div>
+        </nav>
       </header>
     </>
   );
