@@ -10,7 +10,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Footer from "../Components/Footer";
 
-
 const HomePage: React.FC = () => {
   const navigate = useNavigate();
 
@@ -89,7 +88,8 @@ const HomePage: React.FC = () => {
                         image={news.image}
                         title={news.title}
                         news={news.news}
-                        duration={news.duration}
+                        date={news.date}
+                        category={news.category}
                       />
                     </div>
                   </SwiperSlide>
@@ -126,10 +126,14 @@ const HomePage: React.FC = () => {
                   image={news.image}
                   title={news.title}
                   news={news.news}
-                  duration={news.duration}
+                  date={news.date}
+                  category={news.category}
                 />
               </div>
             ))}
+          </div>
+          <div className="flex mt-18">
+            <button className="font-bold text-xl text-white mx-auto px-6 py-2 rounded-lg cursor-pointer bg-black/70 hover:bg-black transition-all ease-in-out duration-300">Explore More</button>
           </div>
         </div>
       </section>

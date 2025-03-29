@@ -1,6 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo1.png";
 
 const SignUp: React.FC = () => {
+  const navigate = useNavigate();
+
+  const SignUpButtonHandler = () => {
+    navigate("/category-selection")
+  }
+
+
   return (
     <>
       <div className="bg-image h-screen">
@@ -73,7 +81,10 @@ const SignUp: React.FC = () => {
                     className="border-2 mt-3 py-2 w-full border-slate-400 rounded-sm outline-none pl-2 bg-transparent text-white  focus:bg-white/80 focus:text-black/80"
                   />
                 </div>
-                <button className="w-full text-white text-2xl font-bold mt-8 border border-white/30 px-8 py-2 rounded-lg bg-white/40 hover:bg-white/80 hover:text-black/60 cursor-pointer transition-all ease-in-out duration-300">
+                <button
+                  className="w-full text-white text-2xl font-bold mt-8 border border-white/30 px-8 py-2 rounded-lg bg-white/40 hover:bg-white/80 hover:text-black/60 cursor-pointer transition-all ease-in-out duration-300"
+                  onClick={SignUpButtonHandler}
+                >
                   Submit
                 </button>
                 <div className="flex justify-center space-x-2">

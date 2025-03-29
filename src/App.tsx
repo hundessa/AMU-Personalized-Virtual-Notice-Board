@@ -5,6 +5,7 @@ import SignUp from "./User_Management/Sign_Up/SignUp";
 import SignIn from "./User_Management/Sign_In/SignIn";
 import News from "./Content_Management/Posts/News";
 import SinglePost from "./Content_Management/Posts/SinglePost";
+import CategorySelection from "./User_Management/DashBoard/CategorySelection";
 
 function App() {
   return (
@@ -16,8 +17,9 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/news" element={<News />} />
           <Route path="/news/:slug" element={<SinglePost />} />
+          <Route path="/category-selection" element={<CategorySelection />} />
         </Routes>
-      </BrowserRouter>     
+      </BrowserRouter>
     </>
   );
 }
