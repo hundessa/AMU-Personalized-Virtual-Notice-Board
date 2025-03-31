@@ -49,7 +49,7 @@ const Header: React.FC = () => {
               <a href="/news" className="hover:border-b-[2px]">
                 News
               </a>
-              <a href="" className="hover:border-b-[2px]">
+              <a href="/faculty-admin-dashboard" className="hover:border-b-[2px]">
                 Contact Us
               </a>
               <div className="flex flex-col md:flex-row xl:space-x-6 space-y-2 xl:items-center xl:mt-[-10px] text-lg font-semibold xl:justify-end xl:ml-auto xl:mr-10">
